@@ -38,7 +38,7 @@ app.post("/confirmationkyc", (req, res) => {
 
   const options = {
     from: process.env.EMAIL_SENDER,
-    to: /*process.env.EMAIL_RECEIVER*/ "ibnuputraard@gmail.com",
+    to: process.env.EMAIL_RECEIVER,
     subject: "ZIPAY KYC",
     text: `Permintaan KYC dari nomor ${REQUEST_BODY.phoneNumber}`,
   };
